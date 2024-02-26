@@ -3,6 +3,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
   export const fish = [
     {
       "id" : 1,
+      "isFavorite": false,
       "name": "Tuna",
       "japanese_name": "Maguro (マグロ)",
       "description": "Tuna is a popular sushi fish known for its rich flavor and firm texture. It comes in different varieties such as bluefin, yellowfin, and albacore. Even though the generic term maguro covers several species, bluefin tuna species are preferred to the other species, especially in high-end restaurants. Bluefin tuna is called hon maguro (本鮪) in Japanese, which literally means “genuine” or “true tuna”.",
@@ -23,6 +24,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id" : 2,
+      "isFavorite": false,
       "name": "Salmon",
       "japanese_name": "Sake (サケ)",
       "description": "Sake-rui (サケ類) is the Japanese generic term for fishes belonging to the family of salmonids. In a narrower sense, the Japanese term sake refers to the pacific salmons, especially to chuma salmon (shirosake, シロザケ), in a broader sense, the term refers to a category of salmon fish that bear the term sake in their name and whose meat is similar in color and texture to that of chum salmon. Traditionally, these fish have been classified as belonging to the sake group if they spend most of their lives in salt water. Only since modern times salmon is prepared as sushi to the extent we know it today. Traditionally, salmon was rarely used for the preparation of sushi or sashimi. Even though the term sake traditionally refers to Pacific salmons, today it is mainly the Atlantic salmon from aquaculture that is used.",
@@ -43,6 +45,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id" : 3,
+      "isFavorite": false,
       "name": "Escolar",
       "japanese_name": "Aburasokomutsu (アブラソコムツすし)",
       "description": "Aburasokomutsu is the Japanese name for the escolar, which is sometimes referred to “butterfish” or incorrectly “white tuna”. Although occasionally referred to as a butterfish, the Escolar is not a member of the butterfish family, but a member of the snake mackerel family. Unlike in Japan, you can often find aburasokomutsu in the display (neta-bako, ネタ箱) of western sushi bars and restaurants. The name “butterfish” or “white tuna” originates from a purely commercial motivation and should sound more appealing to the consumer.",
@@ -63,8 +66,9 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 4,
+      "isFavorite": false,
       "name": "Japanese Horse Mackerel",
-      "japanese_name": "アジすし",
+      "japanese_name": "Aji (アジすし)",
       "description": "Japanese Horse Mackerel, also known as Aji, is a species of fish commonly found in the coastal waters of Japan and throughout the Pacific Ocean.",
       "flavor_profile" : "Aji has a distinctively rich flavor and oily texture, making it a popular choice in Japanese cuisine. Aji is often enjoyed grilled, fried, or served raw as sashimi or nigiri. It is prized for its delicate flavor and versatility in various dishes. Aji is one of the most important representatives of sushi ingredients prepared with the shiny silver skin (hikarimono). The meat of aji is pink and firm. It is also juicy, rich in fat and has a strong characteristic taste. Like other silver-skinned fish, ajj is particularly tasty after salting and marinating in vinegar (sujime-method, 酢じめ). Marinating not only preserves and absorbs strong flavours, but also serves to enrich aromas and reduce the “fishy” taste. Contrary to popular belief, soaking in a salt or vinegar solution does not sufficiently kill any parasites that may be present.",
       "image_url": `${BASE_IMAGE_URL}aji.jpeg`,
@@ -84,6 +88,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 5,
+      "isFavorite": false,
       "name": "Salt-water Eel",
       "japanese_name": "Anago (アナゴ)",
       "description": "Anago, also known as Conger eel, is a type of eel commonly found in the waters around Japan and other parts of Asia.",
@@ -105,6 +110,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 6,
+      "isFavorite": false,
       "name": "Yellowtail",
       "japanese_name": "Hamachi (ハマチすし)",
       "description": "Hamachi is the Japanese term for a medium-sized japanese amberjack or yellowtail (buri). It is a species of jack fishes in the family of Jacks and pompanos. A hamachi is between 40 to 60 cm in size and thus corresponds to about half to three-quarters of a full-grown buri. Hamachi is a popular ingredient in Japanese cuisine and a popular ingredient for sushi and sashimi.",
@@ -126,6 +132,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 7,
+      "isFavorite": false,
       "name": "Sea Bream",
       "japanese_name": "Tai (タイすし)",
       "description" : "Tai describes the family of the sea-breams in Japanese. In the culinary context, it often refers to the red seabream, which in Japan is called madai (マダイ) and literally means “true seabream“. With the rise of modern fishing, the number of sea bream with tai in their name has grown, with more than 140 species belonging to the sea bream family. Also some species of fish, which are not related to the sea bream, have tai in their name. According to Katsumi Suzuki (鈴木克美), professor at Tokai University of Ichthyology, 235 species have the term tai in their name.",
@@ -147,6 +154,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 8,
+      "isFavorite": false,
       "name": "Shrimp",
       "japanese_name": "Ebi (エビ)",
       "description": "The term ebi in Japanese refers to two orders of decapods, namely shrimps and prawns. In Japan, ebi in a culinary context or as a sushi ingredient usually refers to the kuruma shrimp. There are also other species that play an important role in Japanese cuisine and sushi. Especially in Japan, ebi is considered one of the representative high-class ingredients for Edomae style sushi. Some refer to ebi as one of the “kings of sushi” because of its good taste and beautiful look.",
@@ -168,6 +176,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 9,
+      "isFavorite": false,
       "name": "Sweet Shrimp",
       "japanese_name": "Amaebi (甘エビ)",
       "description" : "Amaebi, or spot prawns, (colloquially known as sweet shrimp) are cold water northern shrimp known and named for their sweet taste. Amaebi are caught in their small, male state, as they are at the peak of sweetness early on in their life cycle. Because these sweet shrimp are so small, they are often served two at a time. The only time that it is best served cooked in Japanese cuisine is in their female form while bearing eggs, as the eggs lend a rich flavor to the dish.",
@@ -189,6 +198,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 10,
+      "isFavorite": false,
       "name": "Mackerel",
       "japanese_name": "Saba (サバすし)",
       "description": "Saba is a general term for a group of fishes, belonging to the order mackerels. The predominant part of the fishes with saba in their name belongs to the tribe of “true mackerels”. Traditionally, the term refers to the chub mackerel which is referred to in Japanese as masaba (マサバ) meaning “true mackerel”. In the culinary context, the term “saba“ includes not only chub mackerel but also its relatives such as the Australian mackerel and Atlantic mackerel.",
@@ -210,6 +220,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 11,
+      "isFavorite": false,
       "name": "Octopus",
       "japanese_name": "Tako (タコすし)",
       "description": "Octopus, known as Tako in Japanese, is a marine mollusk with eight arms and a distinctively chewy texture. It is a common ingredient in various cuisines worldwide, including Japanese cuisine.",
@@ -231,6 +242,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 12,
+      "isFavorite": false,
       "name": "Squid",
       "japanese_name": "Ika (イカすし)",
       "description": "Squid, known as Ika in Japanese, includes a large number of possible species, is a cephalopod mollusk with a soft, cylindrical body and ten tentacles. More than 300 species are counted among the ika.",
@@ -252,6 +264,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 13,
+      "isFavorite": false,
       "name": "Freshwater Eel",
       "japanese_name": "Unagi (ウナギすし)",
       "description": "Unagi (ウナギ) is the Japanese word for the genus of freshwater eels and traditionally refers to the Japanese eel (nihon unagi). Unagi is a very popular ingredient in Japanese cuisine and is considered one of the most expensive food fish in Japan. Freshwater eel is not considered a classic sushi ingredient. However, nowadays it is regularly encountered as sushi, especially outside Japan.",
@@ -273,6 +286,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 14,
+      "isFavorite": false,
       "name": "Salmon Caviar",
       "japanese_name": "Ikura (イクラすし)",
       "description": "Ikura (イクラ) is a Japanese loanword for ikra (икра), the Russian word for the eggs or the roe of the fishes. The Japanese term Ikura refers in a narrow sense to the single eggs of salmon, but in a broader sense also includes that of trout. It is prized for its vibrant color, delicate texture, and burst of briny flavor.",
@@ -294,6 +308,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 15,
+      "isFavorite": false,
       "name": "Capelin Roe",
       "japanese_name": "Masago (マサゴすし)",
       "description" : "Masago or shishamo-ko is the original or actual Japanese name for the roe of shishamo, a fish species belonging to the smelt family. Masago is mainly known as an ingredient for sushi, in which it, usually brightly colored, adds a strikingly colorful note to many contemporary sushi dishes. In addition, masago is a frequently used garnish in Japan for many types of rice, noodle and salad dishes.",
@@ -315,6 +330,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 16,
+      "isFavorite": false,
       "name": "Sea Urchin",
       "japanese_name": "Uni (ウニすし)",
       "description": "Uni represents in Japanese the class of sea-urchins which belong to the Echinoderms. Worldwide there are up to a thousand species, but only a small part of them is valued as food. The gonads (reproductive glands of the uni, also occasionally referred to as roe, are considered a delicacy in Japan and many other regions of the world. Gonads are the sexual organs in which sex hormones and germ cells are produced. In a female animal these are the ovaries and in a male animal the testicles. The uni gonads are considered one of the most popular sushi ingredients in Japan.",
@@ -336,6 +352,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 17,
+      "isFavorite": false,
       "name": "Sweet Omelette",
       "japanese_name": "Tamago (卵)",
       "description" : "Tamagoyaki, which literally means grilled egg, (and is also called “dashimaki”) is essentially a Japanese rolled omelette made by folding over the egg many times as it cooks, forming a series of thin layers. Slightly sweet, with an impressively different texture due to the multiple layers, tamagoyaki is not just an unusual item in the sushi continuum, but a testament to the quality of a restaurant.",
@@ -357,6 +374,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 18,
+      "isFavorite": false,
       "name": "Scallop",
       "japanese_name": "Kaibashira (貝柱)",
       "description": "Scallop, known as Kaibashira, is a type of shellfish with a sweet and delicate flavor. It is highly prized in Japanese cuisine for its tender texture and briny taste. Scallops belong to the family Pectinidae and are bivalve mollusks, meaning they have two hinged shells, and the meat is typically harvested from the adductor muscle.",
@@ -378,6 +396,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 19,
+      "isFavorite": false,
       "name": "Flounder",
       "japanese_name": "Hirame (ヒラメすし)",
       "description": "Hirame is the Japanese name for the olive flounder or bastard halibut, the term is also used as a collective term for species of related lefteye flounders that belong to the group of flatfishes (karei-me, カレイ目). Hirame is highly appreciated as an ingredient, especially for the preparation of sushi or sashimi. Wild-caught prime specimens regularly fetch high prices.",
@@ -399,6 +418,7 @@ const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/asse
     },
     {
       "id": 20,
+      "isFavorite": false,
       "name": "Monkfish Liver",
       "japanese_name": "Ankimo (アンキモすし)",
       "description": "Ankimo (あん肝) is a Japanese dish prepared from the liver (kimo, 肝) of a monkfish or anglerfish (ankou, 鮟鱇). It is also known as umi no foagura (海のフォアグラ) and is a delicacy that is very much sought-after in Japan. Ankimo is served as a starter in upscale restaurants that serve traditional Japanese food (washoku), Japanese multi-course haute cuisine (kaiseki ryori) or sushi. For the preparation, the blackmouth angler (ankou, アンコウ) and yellow goosefish (hon ankou, ホナンコウ), which are native to Japan, are preferred. More and more, their European and American relatives are also appearing in Japanese kitchens.",
