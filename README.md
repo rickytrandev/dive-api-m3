@@ -10,4 +10,6 @@ install dependencies
 `npm i`  
 
 spin up the app!  
-`npm start`
+`npm start`  
+
+Return to the Dive UI repo to finish installation.
