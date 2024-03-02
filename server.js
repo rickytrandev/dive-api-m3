@@ -8,7 +8,7 @@ import { config } from "dotenv";
 config()
 
 const app = express();
-const port = 8080;
+const PORT = process.env.PORT || 8080;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -20,8 +20,8 @@ app.use(express.static(__dirname));
 
 app.locals.favorites = [];
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+app.listen(PORT, () => {
+  console.log(`Server is running on PORT ${PORT}`);
 });
 
 app.get("/api/v1/sushi", (req, res) => {
