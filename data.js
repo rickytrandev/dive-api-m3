@@ -1,5 +1,9 @@
-const BASE_IMAGE_URL = process.env.BASE_IMAGE_URL || 'http://localhost:8080/assets/';
-  
+const isLocalhost = !process.env.PORT; // Check if the PORT environment variable exists
+
+const BASE_IMAGE_URL = isLocalhost 
+  ? 'http://localhost:8080/assets/' // If running locally
+  : 'https://dive-api-717e7547a56e.herokuapp.com/assets/'; // If running on Heroku, replace 'your-heroku-app-url' with your actual Heroku app URL
+
   export const fish = [
     {
       "id" : 1,
