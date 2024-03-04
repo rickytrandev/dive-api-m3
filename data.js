@@ -364,7 +364,7 @@ const BASE_IMAGE_URL = isLocalhost
       "image_url": `${BASE_IMAGE_URL}tamago.jpeg`,
       "taste_profile": {
         "taste": "Sweet",
-        "texture": "Soft and fluffy"
+        "texture": "Fluffy"
       },
       "origin": "Japan",
       "best_season": "Year-round",
