@@ -12,4 +12,9 @@ install dependencies
 spin up the app!  
 `npm start`  
 
-Return to the Dive UI repo to finish installation.
+Return to the Dive UI repo to finish installation.  
+
+## Endpoints
+| Method      | Endpoint      | Request Body  |
+| :---:       |    :----:     |          :---:|
+| `GET`       |`/api/v1/sushi`|  `N/A`        |
